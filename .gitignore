@@ -6,6 +6,7 @@ _site
 vendor
 404.html
 Gemfile
+Gemfile.lock
 _config.yml
 _posts/
 about.markdown

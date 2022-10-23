@@ -52,28 +52,21 @@
                          onchange="javascript: updateOutputText(event)">
                 </div>
               </div>
-              <div class="row">
+              <div class="row" hidden style="margin-top: 10px;">
                 <div class="col-md-3" style="padding-left: 0;">
-                  <label for="output-format">Output Format</label>
-                  <select id="output-format"
-                          class="form-control"
-                          onchange="updateOutputText(event);">
-                    <option value='0'>Default (&#rrggbb)</option>
-                    <option value='2'>Legacy (&x&r&r&g&g&b&b)</option>
-                    <option value='6'>Console (§x§r§r§g§g§b§b)</option>
-                    <option value='8'>MOTD (\u00A7x)</option>
-                    <option value='1'>Chat (<#rrggbb>)</option>
-                    <option value='7'>BBCode [COLOR=#rrggbb]</option>
+                  <label for="output-format">Formato do Texto</label>
+                  <select id="output-format" class="form-control" onchange="updateOutputText(event);">
+                    <option value='0'>Padrão (&#rrggbb)</option>
                   </select>
                 </div>
-              </div>
+	      </div>
               <div class="row">
                 <div class="col-md-3" style="padding-left: 0;">
                   <label for="color-preset">Color Preset</label>
                   <select id="color-preset"
                           class="form-control"
                           onchange="preset(this.value); updateOutputText(event); ">
-                    <option value='0'>None</option>
+                    <option value='0'>Nenhum</option>
                     <option value='1'>Rainbow</option>
                   </select>
                 </div>
